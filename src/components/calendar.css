@@ -1,0 +1,47 @@
+/* calendar.css */
+.react-calendar__tile--selected,
+.react-calendar__tile--active {
+  border: 2px solid blue !important;
+  border-radius: 0.375rem; 
+  background: transparent !important;
+  color: inherit !important; 
+}
+
+.react-calendar__tile--selected:enabled:hover,
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--selected:enabled:focus,
+.react-calendar__tile--active:enabled:focus {
+  background: transparent !important;
+  border: 2px solid blue;
+}
+
+/* 현재 달 주말 색상 */
+.react-calendar__tile--current-month-saturday {
+  color: blue !important; /* 현재 달의 토요일을 파란색으로 설정 */
+}
+
+.react-calendar__tile--current-month-sunday {
+  color: red !important; /* 현재 달의 일요일을 빨간색으로 설정 */
+}
+
+/* 다음 달 주말 색상 */
+.react-calendar__tile--next-month-saturday {
+  color: lightblue !important; /* 다음 달 토요일 연한 파란색 */
+}
+
+.react-calendar__tile--next-month-sunday {
+  color: lightcoral !important; /* 다음 달 일요일 연한 빨간색 */
+}
+
+/* 비활성화된 타일에 대한 기본 스타일 설정 */
+.react-calendar__tile--disabled {
+  color: inherit !important; /* 기본 텍스트 색상 유지 */
+}
+
+.custom-calendar .react-calendar__tile {
+  height: 60px; /* Adjust the height */
+  width: 60px; /* Adjust the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

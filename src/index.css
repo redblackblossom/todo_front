@@ -1,0 +1,4 @@
+@import "weather-icons/css/weather-icons.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
